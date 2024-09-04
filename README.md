@@ -11,7 +11,7 @@ pip install tailx
 ## 用例
 
 ```bash
-tailx [文件路径] [-no] [--nocolor] [-h] [--help] [-n Num]
+tailx [文件路径] [-no] [--nocolor] [-n Num] [-f REGEX] [--filter REGEX] [-h] [--help] 
 ```
 ## 查看帮助
 
@@ -37,4 +37,17 @@ tailx path/to/file.log --nocolor
 
 ```bash
 tailx path/to/file.log -n 10
+```
+
+## 修改默认行数
+
+```bash
+tailx path/to/file.log -n 10
+```
+
+## 过滤输出(支持正则)
+
+```bash
+tailx path/to/file.log -f "INFO"
+tailx path/to/file.log --filter "SUCCESS"
 ```
