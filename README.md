@@ -45,7 +45,7 @@ tailx path/to/file.log -n 10
 tailx path/to/file.log -n 10
 ```
 
-## 过滤输出(支持正则)
+## 过滤输出（支持正则）
 
 ```bash
 tailx path/to/file.log -f "INFO"
